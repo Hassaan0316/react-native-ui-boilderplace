@@ -6,15 +6,15 @@
     },
     "declaration": true,
     "emitDeclarationOnly": true, // Only emit .d.ts files without compiling .js
-    "outDir": "./dist/types",  // Where to put the .d.ts files
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
     "lib": ["ESNext"],
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "module": "node16",
+    "moduleResolution": "node16",
+    "outDir": "lib",                /* Redirect output to the directory. */
     // "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
@@ -29,5 +29,4 @@
     "target": "ESNext",
     "verbatimModuleSyntax": false
   },
-  "include": ["src/**/*"]
 }

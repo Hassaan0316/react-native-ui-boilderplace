@@ -3,10 +3,10 @@ import { StyleSheet, Text } from 'react-native';
 import { multiply, Block } from 'react-native-ui-boilderplace-test';
 
 export default function App() {
-  const [result, setResult] = useState<number | undefined>();
+  const [result] = useState<number | undefined>();
 
   useEffect(() => {
-    multiply(3, 7).then(setResult);
+    multiply(3, 7)
   }, []);
 
   return (
