@@ -8,13 +8,10 @@
     "emitDeclarationOnly": true, // Only emit .d.ts files without compiling .js
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
     "lib": ["ESNext"],
-    "module": "node16",
-    "moduleResolution": "node16",
-    "outDir": "lib",                /* Redirect output to the directory. */
+    "outDir": "dist" /* Redirect output to the directory. */,
     // "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
@@ -24,9 +21,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-    "verbatimModuleSyntax": false
-  },
+    "verbatimModuleSyntax": false,
+    "moduleResolution": "node16", // or 'nodenext', or 'bundler'
+    "module": "NodeNext", // Required for ESM/Node modules
+    "esModuleInterop": true, // Allows interoperability between CommonJS and ESModules
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true // Optional: Skips checking of library declaration files
+  }
 }

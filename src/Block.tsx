@@ -1,10 +1,11 @@
 import { StyleSheet, type ViewStyle, View, ViewProps } from 'react-native';
 import { colorPalletes } from './Constants';
 import { iViewStyles } from './interface';
+import { ForwardedRef, forwardRef } from 'react';
 
-export interface iBlockProps extends iViewStyles, ViewProps {}
+export interface iBlockProps extends iViewStyles, ViewProps { }
 
-const Block = (props: iBlockProps) => {
+const Block = forwardRef((props: iBlockProps, ref: ForwardedRef<any>) => {
   const {
     children,
     flex,
@@ -104,18 +105,19 @@ const Block = (props: iBlockProps) => {
 
   return (
     <View
-      {...props}
+      ref={ref}
       accessible={props.accessible ?? false}
       style={[
         shadow && dynamicStyles(shadowColor).shadowStyle,
         viewStyles,
         style,
       ]}
+      {...props}
     >
       {children}
     </View>
   );
-};
+});
 
 const dynamicStyles = (shadowColor: ViewStyle['shadowColor']) =>
   StyleSheet.create({

@@ -1,4 +1,4 @@
-import type { ViewStyle } from 'react-native';
+import type { StyleProp, TextStyle, ViewStyle } from 'react-native';
 
 export interface iViewStyles {
   top?: ViewStyle['top'];
@@ -50,4 +50,36 @@ export interface iViewStyles {
   flexWrap?: ViewStyle['flexWrap'];
   zIndex?: ViewStyle['zIndex'];
   // style?: StyleProp<ViewStyle>
+}
+
+
+export interface iTextStyles extends TextStyle {
+  h1?: boolean;
+  h2?: boolean;
+  h3?: boolean;
+  h4?: boolean;
+  b?: boolean;
+  p?: boolean;
+  xs?: boolean;
+  fontFamily?: TextStyle['fontFamily'];
+  lineHeight?: TextStyle['lineHeight'];
+  size?: TextStyle['fontSize'];
+  color?: TextStyle['color'];
+  weight?: TextStyle['fontWeight'];
+  align?: TextStyle['textAlign'];
+  margin?: TextStyle['margin'];
+  marginVertical?: TextStyle['marginVertical'];
+  marginHorizontal?: TextStyle['marginHorizontal'];
+  marginTop?: TextStyle['marginTop'];
+  marginBottom?: TextStyle['marginBottom'];
+  marginRight?: TextStyle['marginRight'];
+  marginLeft?: TextStyle['marginLeft'];
+  padding?: TextStyle['padding'];
+  paddingHorizontal?: TextStyle['paddingHorizontal'];
+  paddingVertical?: TextStyle['paddingVertical'];
+  paddingTop?: TextStyle['paddingTop'];
+  paddingBottom?: TextStyle['paddingBottom'];
+  paddingLeft?: TextStyle['paddingLeft'];
+  paddingRight?: TextStyle['paddingRight'];
+  style?: StyleProp<TextStyle>;
 }
