@@ -44,7 +44,7 @@ const Block = (props: iBlockProps) => {
     shadowRadius,
     elevation,
     backgroundColor,
-    // style,
+    style,
     left,
     top,
     right,
@@ -105,12 +105,11 @@ const Block = (props: iBlockProps) => {
   return (
     <View
       {...props}
-      // accessible={props.accessible ?? false}
+      accessible={props.accessible ?? false}
       style={[
-        // prettier-ignore
         shadow && dynamicStyles(shadowColor).shadowStyle,
         viewStyles,
-        // style,
+        style,
       ]}
     >
       {children}
