@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-ui-boilderplace-test';
+import { StyleSheet, Text } from 'react-native';
+import { multiply, Block } from 'react-native-ui-boilderplace-test';
 
 export default function App() {
   const [result, setResult] = useState<number | undefined>();
@@ -10,9 +10,9 @@ export default function App() {
   }, []);
 
   return (
-    <View style={styles.container}>
+    <Block style={styles.container}>
       <Text>Result: {result}</Text>
-    </View>
+    </Block>
   );
 }
 

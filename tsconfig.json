@@ -4,6 +4,9 @@
     "paths": {
       "react-native-ui-boilderplace-test": ["./src/index"]
     },
+    "declaration": true,
+    "emitDeclarationOnly": true, // Only emit .d.ts files without compiling .js
+    "outDir": "./dist/types",  // Where to put the .d.ts files
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,
@@ -12,7 +15,7 @@
     "lib": ["ESNext"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "noEmit": true,
+    // "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
@@ -24,6 +27,7 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-    "verbatimModuleSyntax": true
-  }
+    "verbatimModuleSyntax": false
+  },
+  "include": ["src/**/*"]
 }
