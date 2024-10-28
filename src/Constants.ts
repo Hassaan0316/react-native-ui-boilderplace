@@ -1,5 +1,4 @@
 import { Dimensions, Platform } from "react-native";
-import { moderateScale } from "react-native-size-matters";
 
 export const colorPalletes = {
   'black': '#000000',
@@ -55,4 +54,4 @@ export const PlatformIOS = Platform.OS === 'ios';
 export const PlatformAndroid = Platform.OS === 'android';
 export const isTablet = IsIPAD && PlatformAndroid;
 export const ACTIVE_OPACITY = 0.6;
-export const PRIMARY_BUTTON_HEIGHT = IsIPAD ? 72 : moderateScale(48);
+export const PRIMARY_BUTTON_HEIGHT = IsIPAD ? 72 : 48;

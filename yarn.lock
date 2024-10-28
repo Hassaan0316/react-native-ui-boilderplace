@@ -12608,15 +12608,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-size-matters@npm:^0.4.2":
-  version: 0.4.2
-  resolution: "react-native-size-matters@npm:0.4.2"
-  peerDependencies:
-    react-native: "*"
-  checksum: 65dac50cad8d03bd046c62e327edf1c162c650fa3320613343bb978ca4b83c8e4e61b0f528502a154a1d4e4baa6dc296799a57737177e3d3c77b64750f5d8076
-  languageName: node
-  linkType: hard
-
 "react-native-ui-boilderplace-test-example@workspace:example":
   version: 0.0.0-use.local
   resolution: "react-native-ui-boilderplace-test-example@workspace:example"
@@ -12652,7 +12643,6 @@ __metadata:
     react-native: 0.74.5
     react-native-builder-bob: ^0.30.2
     react-native-reanimated: ^3.16.1
-    react-native-size-matters: ^0.4.2
     release-it: ^15.0.0
     typescript: ^5.2.2
   peerDependencies:

@@ -1,6 +1,6 @@
 {
   "name": "react-native-ui-boilderplace-test",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "test",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -169,7 +169,6 @@
     "version": "0.42.0"
   },
   "dependencies": {
-    "react-native-reanimated": "^3.16.1",
-    "react-native-size-matters": "^0.4.2"
+    "react-native-reanimated": "^3.16.1"
   }
 }
