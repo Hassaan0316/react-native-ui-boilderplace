@@ -1,9 +1,9 @@
-import React, { memo } from 'react';
-import { ViewProps, I18nManager, ViewStyle } from 'react-native';
+import React from 'react';
+import { ViewProps, Pressable, I18nManager, ViewStyle } from 'react-native';
 import Animated, { useAnimatedStyle, interpolate, withTiming } from 'react-native-reanimated';
+import Block from './Block';
 import { iViewStyles } from './interface';
 import { colorPalletes } from './Constants';
-import TouchableBlock from './TouchableBlock';
 
 interface Props extends iViewStyles, ViewProps {
   handleToggle: () => void;
@@ -23,31 +23,33 @@ const ToggleButton: React.FC<Props> = (props) => {
   });
 
   return (
-    <TouchableBlock
+    <Pressable
       disabled={disabled}
-      onPress={handleToggle}
       accessible={true}
-      height={24}
-      width={44}
-      backgroundColor={value ? colorPalletes['alAdaam-80'] : colorPalletes['grey-60']}
-      borderRadius={40}
-      paddingHorizontal={2}
-      paddingVertical={2}
-      {...props}
+      onPress={handleToggle}
     >
-      <Animated.View
-        style={[
-          {
-            width: 20,
-            height: 20,
-            backgroundColor: 'white',
-            borderRadius: 40,
-          },
-          animatedStyle, innerBallStyles
-        ]}
-      />
-    </TouchableBlock>
+      <Block
+        height={24}
+        width={44}
+        backgroundColor={value ? colorPalletes['alAdaam-80'] : colorPalletes['grey-60']}
+        borderRadius={40}
+        paddingHorizontal={2}
+        paddingVertical={2}
+      >
+        <Animated.View
+          style={[
+            {
+              width: 20,
+              height: 20,
+              backgroundColor: 'white',
+              borderRadius: 40,
+            },
+            animatedStyle, innerBallStyles
+          ]}
+        />
+      </Block>
+    </Pressable>
   );
 };
 
-export default memo(ToggleButton);
+export default ToggleButton;
