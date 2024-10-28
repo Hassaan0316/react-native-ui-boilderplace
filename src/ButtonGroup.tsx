@@ -21,7 +21,7 @@ const ButtonGroup = (props: IButtonGroup) => {
   } = props;
 
   return (
-    <Block accessible={false} flexWrap="wrap" flexDirection="row" gap={16} style={containerStyle}>
+    <Block accessible={false} flexWrap="wrap" flexDirection="row" gap={8} style={containerStyle}>
       {buttons.map((button, index) => {
         return (
           <TouchableBlock

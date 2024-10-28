@@ -50,7 +50,7 @@ const TouchableBlock = forwardRef((props: iProps, ref: ForwardedRef<any>) => {
     paddingBottom !== undefined && { paddingBottom: paddingBottom },
     paddingLeft !== undefined && { paddingLeft: paddingLeft },
     paddingRight !== undefined && { paddingRight: paddingRight },
-    borderRadius !== undefined ? { borderRadius: borderRadius } : { borderRadius: 10 },
+    borderRadius !== undefined ? { borderRadius: borderRadius } : { borderRadius: 0 },
     borderWidth !== undefined && { borderWidth: borderWidth },
     borderColor !== undefined && { borderColor: borderColor },
     shadowColor !== undefined && { shadowColor: shadowColor },

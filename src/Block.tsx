@@ -105,6 +105,7 @@ const Block = forwardRef((props: iBlockProps, ref: ForwardedRef<any>) => {
 
   return (
     <View
+      {...props}
       ref={ref}
       accessible={props.accessible ?? false}
       style={[
@@ -112,7 +113,6 @@ const Block = forwardRef((props: iBlockProps, ref: ForwardedRef<any>) => {
         viewStyles,
         style,
       ]}
-      {...props}
     >
       {children}
     </View>
