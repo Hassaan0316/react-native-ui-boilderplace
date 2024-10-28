@@ -1,3 +1,6 @@
+import { Dimensions, Platform } from "react-native";
+import { moderateScale } from "react-native-size-matters";
+
 export const colorPalletes = {
   'black': '#000000',
   'white': '#ffffff',
@@ -45,3 +48,11 @@ export const colorPalletes = {
 
   'shadowPointFive': 'rbg(0, 0, 0, 0.15)',
 };
+
+export const { width: screenWidth, height: screenheight } = Dimensions.get('window');
+export const IsIPAD = screenWidth >= 1000 || screenheight >= 1000;
+export const PlatformIOS = Platform.OS === 'ios';
+export const PlatformAndroid = Platform.OS === 'android';
+export const isTablet = IsIPAD && PlatformAndroid;
+export const ACTIVE_OPACITY = 0.6;
+export const PRIMARY_BUTTON_HEIGHT = IsIPAD ? 72 : moderateScale(48);

@@ -1,4 +1,4 @@
-import type { StyleProp, TextStyle, ViewStyle } from 'react-native';
+import type { StyleProp, TextStyle, TouchableOpacityProps, ViewStyle } from 'react-native';
 
 export interface iViewStyles {
   top?: ViewStyle['top'];
@@ -82,4 +82,22 @@ export interface iTextStyles extends TextStyle {
   paddingLeft?: TextStyle['paddingLeft'];
   paddingRight?: TextStyle['paddingRight'];
   style?: StyleProp<TextStyle>;
+}
+
+export interface ifont {
+  fontSize: TextStyle['fontSize'],
+  fontFamily: TextStyle['fontFamily'],
+  fontWeight: TextStyle['fontWeight']
+}
+
+export interface IButtonGroup extends TouchableOpacityProps{
+  buttons: string[];
+  selectedButton: number | null;
+  onSelect: (index: number) => void;
+  activeButtonColor?: string;
+  containerStyle?: ViewStyle;
+  buttonStyle?: ViewStyle;
+  buttonTextStyle?: TextStyle;
+  inActiveTextColor?: string;
+  textStyles?: TextStyle;
 }

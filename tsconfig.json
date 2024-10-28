@@ -12,7 +12,6 @@
     "jsx": "react-jsx",
     "lib": ["ESNext"],
     "outDir": "dist" /* Redirect output to the directory. */,
-    // "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
