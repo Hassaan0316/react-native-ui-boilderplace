@@ -13,7 +13,7 @@ interface iProp extends ViewStyle, ViewProps {
 }
 
 const LinearProgress = (props: iProp) => {
-  const { backgroundColor = colorPalletes['skyline-10'], width = '100%', height = 24, progress, gradientColors, linecap = 'round', borderRadius = 8 } = props;
+  const { backgroundColor = colorPalletes['skyline-10'], width = '100%', height = 24, progress, gradientColors, borderRadius = 8 } = props;
 
   return (
     <View style={[styles.container, { backgroundColor: backgroundColor, width: width, height: height }]}
