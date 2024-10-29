@@ -1,5 +1,5 @@
 import { ActivityIndicator, ViewStyle } from 'react-native';
-import { Block } from 'react-native-ui-boilderplace-test'
+import { Block } from 'react-native-ui-boilderplace'
 import { colorPalletes } from '../Constants';
 
 interface iProps extends ViewStyle {

@@ -1,18 +1,18 @@
-# react-native-ui-boilderplace-test
+# react-native-ui-boilderplace
 
 test
 
 ## Installation
 
 ```sh
-npm install react-native-ui-boilderplace-test
+npm install react-native-ui-boilderplace
 ```
 
 ## Usage
 
 
 ```js
-import { Block } from 'react-native-ui-boilderplace-test';
+import { Block } from 'react-native-ui-boilderplace';
 
 // ...
 

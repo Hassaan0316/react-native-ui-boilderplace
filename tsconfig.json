@@ -4,7 +4,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-ui-boilderplace-test": ["./src/index"],
+      "react-native-ui-boilderplace": ["./src/index"],
     },
     "declaration": true,
     "emitDeclarationOnly": true, // Only emit .d.ts files without compiling .js

@@ -1,4 +1,4 @@
-declare module 'react-native-ui-boilderplace-test' {
+declare module 'react-native-ui-boilderplace' {
   export { default as Block } from '../Block';
   export { default as TextComponent } from '../TextComponent';
   export { default as PrimaryButton } from '../PrimaryButton';

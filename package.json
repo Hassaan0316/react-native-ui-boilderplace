@@ -1,5 +1,5 @@
 {
-  "name": "react-native-ui-boilderplace-test",
+  "name": "react-native-ui-boilderplace",
   "version": "0.1.30",
   "description": "test",
   "source": "./src/index.tsx",
@@ -38,7 +38,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-ui-boilderplace-test-example",
+    "example": "yarn workspace react-native-ui-boilderplace-example",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -53,14 +53,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hassaan0316/react-native-ui-boilderplace-test.git"
+    "url": "git+https://github.com/Hassaan0316/react-native-ui-boilderplace.git"
   },
   "author": "hassaan0316 <dev.hassaan0316@gmail.com> (https://github.com/Hassaan0316)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Hassaan0316/react-native-ui-boilderplace-test/issues"
+    "url": "https://github.com/Hassaan0316/react-native-ui-boilderplace/issues"
   },
-  "homepage": "https://github.com/Hassaan0316/react-native-ui-boilderplace-test#readme",
+  "homepage": "https://github.com/Hassaan0316/react-native-ui-boilderplace#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
