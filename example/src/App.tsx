@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { StyleSheet } from 'react-native';
-import { CheckBoxComponent, CircularProgressBar, LinearProgress } from 'react-native-ui-boilderplace-test';
+import { CheckBoxComponent, CircularProgressBar, FullPageLoader, LinearProgress, LoadingIndicator } from 'react-native-ui-boilderplace-test';
 import { multiply, Block, TextComponent, RadioButton, ToggleButton, ButtonGroup, PrimaryButton } from 'react-native-ui-boilderplace-test';
 import { IsIPAD, screenWidth } from '../../src/Constants';
 
@@ -66,6 +66,9 @@ export default function App() {
           strokeWidth={20}
         />
       </Block>
+
+      {/* <FullPageLoader /> */}
+      {/* <LoadingIndicator /> */}
     </Block>
   );
 }
