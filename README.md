@@ -35,8 +35,4 @@ MIT
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
 
 
-## Remember to add
-```sh
-npm install react-native-reanimated
-```
-
+# Remember to add peer dependencies
