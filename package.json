@@ -88,8 +88,8 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-svg": "^15.8.0",
-    "react-native-circular-progress-indicator": "^4.4.2"
+    "react-native-circular-progress-indicator": "^4.4.2",
+    "react-native-svg": "^15.8.0"
   },
   "workspaces": [
     "example"
