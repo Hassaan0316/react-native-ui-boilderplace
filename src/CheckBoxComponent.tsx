@@ -3,18 +3,22 @@ import { StyleSheet, Pressable, PressableProps, Animated } from 'react-native';
 import { iViewStyles } from './interface';
 import { colorPalletes } from './Constants';
 import Block from './Block';
-import TickSvg from '../assets/TickSvg';
+import Svg, { Path } from 'react-native-svg';
 
 interface iProps extends PressableProps {
   toggleCheckBox: boolean;
   handleCheckBox: (value: boolean) => void;
   color?: string;
   duration?: number;
+  height?: number,
+  width?: number,
   style?: iViewStyles;
 }
 
 const CheckBoxComponent = (props: iProps) => {
-  const { handleCheckBox, toggleCheckBox, color, style, duration } = props;
+  const { handleCheckBox, toggleCheckBox, color, style, duration,
+    width = 24, height = 24
+  } = props;
 
   // Create an animated value for progress
   const progress = useRef(new Animated.Value(toggleCheckBox ? 1 : 0)).current;
@@ -46,7 +50,9 @@ const CheckBoxComponent = (props: iProps) => {
         onPress={() => handleCheckBox(!toggleCheckBox)}
       >
         <Animated.View style={[styles.containerStyles, animatedStyle, style]}>
-          <TickSvg />
+          <Svg width={width} height={height} viewBox="0 0 24 24" fill="none">
+            <Path d="M8.5 12L11 14.5L16 9.5" stroke="#FEFEFE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </Svg>
         </Animated.View>
       </Pressable>
     </Block>
