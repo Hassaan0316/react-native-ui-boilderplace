@@ -12,5 +12,8 @@ declare module 'react-native-ui-boilderplace-test' {
   export { default as Divider } from '../Divider';
   export { useDebounce } from '../Hooks/useDebounce';
   export { useKeyboard } from '../Hooks/useKeyboard';
+  export { default as FullPageLoader } from '../Loaders/FullPageLoader';
+  export { default as LoadingIndicator } from '../Loaders/LoadingIndicator';
+  export { default as Refresh } from '../Loaders/Refresh';
   export function multiply(a: number, b: number): number;
 }
