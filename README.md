@@ -12,11 +12,13 @@ npm install react-native-ui-boilderplace-test
 
 
 ```js
-import { multiply } from 'react-native-ui-boilderplace-test';
+import { Block } from 'react-native-ui-boilderplace-test';
 
 // ...
 
-const result = await multiply(3, 7);
+<Block>
+  {children}
+</Block>
 ```
 
 

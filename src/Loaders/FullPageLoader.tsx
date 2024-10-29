@@ -1,6 +1,6 @@
 import { ViewStyle } from 'react-native'
 import LoadingIndicator from './LoadingIndicator'
-import { screenWidth } from '../Constants'
+import { screenheight, screenWidth } from '../Constants'
 
 interface iProps extends ViewStyle {
   indicatorColor?: string
@@ -17,6 +17,7 @@ const FullPageLoader = (props: iProps) => {
       alignItems='center'
       justifyContent='center'
       width={screenWidth}
+      height={screenheight}
       zIndex={111}
       {...props}
     />
