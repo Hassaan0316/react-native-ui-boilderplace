@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import type { StyleProp, TextStyle, TouchableOpacityProps, ViewStyle } from 'react-native';
+import type { RefreshControlProps, StyleProp, TextStyle, TouchableOpacityProps, ViewStyle } from 'react-native';
 export interface iViewStyles {
     top?: ViewStyle['top'];
     left?: ViewStyle['left'];
@@ -95,4 +95,10 @@ export interface IButtonGroup extends TouchableOpacityProps {
     buttonTextStyle?: TextStyle;
     inActiveTextColor?: string;
     textStyles?: TextStyle;
+}
+export interface IRefresh extends RefreshControlProps {
+    color?: string;
+    progressViewOffset?: number | undefined;
+    refreshing: boolean;
+    onRefresh?: (() => void) | undefined;
 }

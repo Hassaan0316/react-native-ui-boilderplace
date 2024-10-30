@@ -7,8 +7,6 @@ declare module 'react-native-ui-boilderplace' {
   export { default as TouchableBlock } from '../TouchableBlock';
   export { default as ToggleButton } from '../ToggleButton';
   export { default as CheckBoxComponent } from '../CheckBoxComponent';
-  export { default as LinearProgress } from '../ProgressBars/LinearProgress';
-  export { default as CircularProgressBar } from '../ProgressBars/CircularProgressBar';
   export { default as Divider } from '../Divider';
   export { useDebounce } from '../Hooks/useDebounce';
   export { useKeyboard } from '../Hooks/useKeyboard';

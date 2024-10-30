@@ -5,6 +5,8 @@ interface iProps extends PressableProps {
     handleCheckBox: (value: boolean) => void;
     color?: string;
     duration?: number;
+    height?: number;
+    width?: number;
     style?: iViewStyles;
 }
 declare const CheckBoxComponent: (props: iProps) => import("react/jsx-runtime").JSX.Element;
