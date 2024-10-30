@@ -1,29 +1,46 @@
 import { useState, useEffect } from 'react';
-import { StyleSheet } from 'react-native';
-import { CheckBoxComponent, CircularProgressBar, LinearProgress } from 'react-native-ui-boilderplace';
-import { multiply, Block, TextComponent, RadioButton, ToggleButton, ButtonGroup, PrimaryButton } from 'react-native-ui-boilderplace';
-import { IsIPAD, screenWidth } from '../../src/Constants';
+import { StyleSheet, TextInput } from 'react-native';
+import {
+  multiply,
+  Block,
+  TextComponent,
+} from 'react-native-ui-boilderplace';
+import { colorPalletes, screenWidth } from '../../src/Constants';
 
 export default function App() {
   const [result] = useState<number | undefined>();
-  const [radio, setRadio] = useState<boolean>(false);
+  // const [radio, setRadio] = useState<boolean>(false);
+  const [val, setVal] = useState('')
 
   useEffect(() => {
-    multiply(3, 7)
+    multiply(3, 7);
   }, []);
 
-  const target = 100;
-  const value = 65;
-  let containerWidthAndHeight = IsIPAD ? 200 : (screenWidth - 48) / 2 - 6 - 36;
+  // const target = 100;
+  // const value = 65;
+  // let containerWidthAndHeight = IsIPAD ? 200 : (screenWidth - 48) / 2 - 6 - 36;
 
   return (
     <Block style={styles.container}>
       <TextComponent>Result: {result}</TextComponent>
-      <RadioButton
+      <TextInput
+        value={val}
+        onChangeText={setVal}
+        multiline
+        numberOfLines={2}
+        underlineColorAndroid={'transparent'}
+        style={{ width: screenWidth - 48, height: 'auto', backgroundColor: colorPalletes['skyline-50'],
+          borderRadius: 10,
+          borderWidth: 1,
+          textAlign: 'left',
+          padding: 16
+         }}
+      />
+      {/* <RadioButton
         enable={radio}
         handleChange={() => setRadio(prev => !prev)}
-      />
-
+      /> */}
+      {/* 
       <ToggleButton
         value={radio}
         handleToggle={() => setRadio(prev => !prev)}
@@ -65,7 +82,7 @@ export default function App() {
           radius={containerWidthAndHeight / 2}
           strokeWidth={20}
         />
-      </Block>
+      </Block> */}
 
       {/* <FullPageLoader /> */}
       {/* <LoadingIndicator /> */}
